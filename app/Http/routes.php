@@ -11,10 +11,15 @@
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('welcome');
 });
 
 Route::get('/works', function () {
     return 'route works successfully';
-});
+});*/
+
+
+Route::get('/', 'PageController@home');
+
+Route::get('/about', 'PageController@about');

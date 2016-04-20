@@ -20,6 +20,10 @@ Route::get('/works', function () {
 });*/
 
 
-Route::get('/', 'PageController@home');
+
+//Route::get('/', 'PageController@home');
+
+Route::get('/', 'CardsController@index');
+Route::get('cards','CardsController@index');
 
 Route::get('/about', 'PageController@about');
